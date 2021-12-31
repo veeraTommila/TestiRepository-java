@@ -8,7 +8,7 @@ namespace C__game
         {
             const int GuesTimes = 3;
                 int guessIndexes = 0;
-                while (true)
+                while (true) 
                 {
                     Console.WriteLine("Guess the number!");
 
