@@ -123,6 +123,7 @@ public class BinaryStringTree {
         BinaryStringTree binaaripuu1 = new BinaryStringTree();
         BinaryStringTree binaaripuu2 = new BinaryStringTree();
         BinaryStringTree binaaripuu3 = new BinaryStringTree();
+        BinaryStringTree binaaripuu4 = new BinaryStringTree();
               
         binaaripuu1.addNode("F");
         binaaripuu1.addNode("C");
@@ -135,12 +136,11 @@ public class BinaryStringTree {
         binaaripuu1.addNode("H");
         binaaripuu1.addNode("B");
        
-        System.out.println("Puu1: ");
+        System.out.println("Puu1 esijärjestyksessä: ");
         binaaripuu1.esijarjesta();
         System.out.println(" ");
         System.out.println("Mitkä missä:");
         binaaripuu1.tellLeftRight();
-        System.out.println(" ");
         System.out.println("Puu1 printorder ");
         binaaripuu1.printOrder();
         
@@ -157,9 +157,8 @@ public class BinaryStringTree {
         binaaripuu2.addNode("J");
         binaaripuu2.addNode("E");
         
-        System.out.println("Puu2: ");
+        System.out.println("Puu2 esijärjestyksessä: ");
         binaaripuu2.esijarjesta();
-        System.out.println(" ");
         System.out.println("Mitkä missä:");
         binaaripuu2.tellLeftRight();
 
@@ -177,11 +176,30 @@ public class BinaryStringTree {
         binaaripuu3.addNode("D");
         binaaripuu3.addNode("J");
         
-        System.out.println("Puu3: ");
-        binaaripuu3.esijarjesta();
-        System.out.println(" ");
+        System.out.println("Puu3 esijärjestyksessä: ");
+        binaaripuu3.sisajarjesta();       
         System.out.println("Mitkä missä:");
         binaaripuu3.tellLeftRight();
+        
+System.out.println(" ");
+        
+		binaaripuu4.addNode("Q");
+		binaaripuu4.addNode("T");
+		binaaripuu4.addNode("R");
+		binaaripuu4.addNode("H");
+		binaaripuu4.addNode("L");
+		binaaripuu4.addNode("X");
+		binaaripuu4.addNode("W");
+		binaaripuu4.addNode("F");		
+        
+		System.out.println("Puu4 sisäjärjestyksessä: ");
+        binaaripuu4.sisajarjesta();
+		System.out.println("Puu4 esijärjestyksessä: ");
+        binaaripuu4.esijarjesta(); 
+        System.out.println("Puu4 jälkijärjestyksessä: ");
+        binaaripuu4.jalkijarjesta();
+        System.out.println("Mitkä missä:");
+        binaaripuu4.tellLeftRight();
 	}
 
 }
